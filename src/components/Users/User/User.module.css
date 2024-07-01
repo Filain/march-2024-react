@@ -1,0 +1,30 @@
+.container {
+    /*flex-wrap: wrap;*/
+
+    background-color: gold;
+    width: 30%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*padding: 20px;*/
+    /*box-sizing: border-box;*/
+    border-radius: 10px;
+}
+
+p{
+    padding: 0;
+    margin: 5px 0 0 10px;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+button{
+    width: 40%;
+    margin: 5px;
+    border-radius: 5px;
+}
