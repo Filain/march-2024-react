@@ -1,17 +1,17 @@
-import {FC, PropsWithChildren} from "react";
-import { Users } from "./Components/Users";
+import { FC, PropsWithChildren } from "react";
+import { Users } from "./components/Users";
 
-interface IProps extends PropsWithChildren{
+interface IProps extends PropsWithChildren {
 
 }
 
 const App: FC<IProps> = () => {
- return (
-  <div>
-   App
-   <Users/>
-  </div>
- );
+    return (
+        <div>
+            App
+            <Users />
+        </div>
+    );
 };
 
-export {App};
+export { App };
