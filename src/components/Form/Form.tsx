@@ -1,5 +1,6 @@
 import { FC, PropsWithChildren, useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
+import { postService } from "../../services/postService";
 ;
 
 interface IProps extends PropsWithChildren {
@@ -14,8 +15,10 @@ type IFormType = {
 const Form: FC<IProps> = () => {
 
     const { register, handleSubmit } = useForm<IFormType>()
-    const handleFunction = (data: IFormType) => {
-        console.log(data);
+    const handleFunction = async(data: IFormType) => {
+        const userId:number= 1
+        console.log({userId, ...data});
+        await postService.postPost({userId, ...data})
 
     }
     return (

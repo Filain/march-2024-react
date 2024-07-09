@@ -6,7 +6,7 @@ import {IForm} from "../interfaces/formIterface";
 
 const postService ={
     getByUserId:(id:string): Promise<AxiosResponse<IPost[]>> => axiosService.get(urls.getPostByUserId(id)),
-    postPost:(data:IForm):Promise<void> => axiosService.post(urls.posts)
+    postPost:(data:IForm):Promise<void> => axiosService.post(urls.posts, data)
 }
 
 export {postService}
